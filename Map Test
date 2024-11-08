@@ -1,0 +1,71 @@
+import java.util.ArrayList;
+
+public class MapTest{
+    public static void mapPipe() {
+    var spacer = "      ";
+       var map = new ArrayList<>();
+        map.add("|      |");
+        map.add("|      |");
+        map.add("|      |");
+    
+    
+    System.out.println(map.get(0));
+    System.out.println(map.get(1));
+    System.out.println(map.get(2));
+  }
+    public static void mapSidePipe() {
+    var spacer = "      ";
+       var map = new ArrayList<>();
+        map.add("--------");
+        map.add("--------");
+    
+    System.out.println(map.get(0));
+    System.out.println(spacer);
+    System.out.println(spacer);
+    System.out.println(map.get(1));
+  }
+    public static void mapRightPipe() {
+    var spacer = "      ";
+       var map = new ArrayList<>();
+        map.add("_______");
+        map.add("|      ");
+        map.add("|      ");
+        map.add("|      ");
+    
+    System.out.println(map.get(0));
+    System.out.println(map.get(1));
+    System.out.println(map.get(2));
+    System.out.println(map.get(3));
+  }
+    public static void mapRightPipeOff() {
+    var spacer = "      ";
+       var map = new ArrayList<>();
+        map.add("_______");
+        map.add("|      ");
+        map.add("|      ");
+        map.add("|      ");
+    
+    System.out.print(map.get(0));
+    System.out.print(map.get(1));
+    System.out.print(map.get(2));
+    System.out.println(map.get(3));
+  }
+
+
+     public static void main(String[] args) throws Exception {
+         
+     
+      mapRightPipe();
+      mapRightPipeOff();
+      mapPipe();
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    }
+}
